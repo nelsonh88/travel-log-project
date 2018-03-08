@@ -16,4 +16,5 @@ Rails.application.routes.draw do
   get '/trips/:id' => 'trips#show'
   get '/trips' => 'tripss#index'
   patch '/trips/:id' => 'tripss#update'
+  delete '/trips/:id' => 'trips#destroy'
 end
