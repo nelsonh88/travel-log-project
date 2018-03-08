@@ -13,4 +13,6 @@ Rails.application.routes.draw do
   patch '/change-password' => 'users#changepw'
 
   post '/trips/' => 'trips#create'
+  get '/trips/:id' => 'trips#show'
+  get '/trips' => 'tripss#index'
 end
